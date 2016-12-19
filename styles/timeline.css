@@ -1,0 +1,107 @@
+#timeline .main {
+    width: 100%;
+    height: 100%;
+    background: black;
+    float: left;
+}
+
+#timeline .link {
+    stroke-width: 2px;
+    stroke: #FFF;
+}
+
+#timeline .legend {
+    width: 5%;
+    height: 100%;
+}
+
+#timeline .articleInfo {
+    height: 100%;
+    width: auto;
+    /*background: rgba(254, 254, 254, 0.26);*/
+    background: white;
+    color: black;
+    padding: 8px;
+    padding-bottom: 12px;
+    margin-bottom: 100px;
+    position: relative;
+}
+#timeline .articleInfo header {
+    font: 8px 'Open Sans', sans-serif;
+    color: black;
+}
+#timeline .articleInfo a {
+    color: black;
+}
+
+#timeline .articleInfo section {
+    display: flex;
+}
+
+#timeline .articleInfo .texts {
+    float: left;
+    margin-right: 8px;
+}
+
+#timeline .articleInfo p {
+    width: 100%;
+    color: black;
+    display: inherit;
+    font: 12px 'Open Sans', sans-serif;
+}
+
+#timeline .articleInfo #sentimentChart {
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+#timeline .articleInfo .bar {
+    font: 10px sans-serif;
+    background-color: black;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    color: red;
+    flex-grow: 1;
+}
+
+#timeline .articleInfo .bar p {
+    float: right;
+}
+
+#timeline .hidden {
+    display: none;
+}
+
+#timeline .timerangeContainer {
+    width: 100%;
+    height: 5%;
+    top: 10px;
+    right: 20px;
+    background: black;
+    margin-top: 20px;
+}
+
+#timeline .timerangeContainer #timerange {
+    margin-left: 5%;
+    margin-right: auto;
+    width: 90%;
+}
+#timeline .timerangeContainer #timerange .noUi-connect {
+    background: rgba(112,112,112,1);
+}
+
+#timeline #timeText {
+    position: absolute;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    height: auto;
+    width: auto;
+    color: white;
+}
+
+#timeline .subtext {
+    font-family: "Open Sans", sans-serif;
+}
+
