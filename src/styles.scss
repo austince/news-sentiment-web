@@ -1,0 +1,61 @@
+// Global styles and imports
+@import 'variables';
+@import 'mixins';
+
+body {
+  background: $white;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+a:link {
+  color: $black;
+}
+
+a:visited {
+  color: $black;
+}
+
+footer {
+  text-align: center;
+}
+
+.header-text {
+  @include primary-font;
+}
+
+.sub-text {
+  @include secondary-font;
+  font-size: 1.125em;
+}
+
+
+// Scrollbar on webkit browsers
+::-webkit-scrollbar {
+  width: 5px;
+
+  &-thumb {
+    background: $teal;
+    border-radius: 25px;
+    box-shadow: inset 0 1px 1px 1px rgba(38, 50, 56, .1);
+
+
+    &:hover {
+      background: $teal;
+    }
+
+    &:active {
+      background: rgba(38, 50, 56, .9);
+    }
+  }
+
+  &-track {
+    background: rgba(176, 190, 197, .5);
+    border-radius: 25px;
+
+    :hover {
+      background: rgba(176, 190, 197, .9);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import 'variables';
+
+@mixin primary-font() {
+  font-family: 'Playfair Display SC', serif;
+}
+
+@mixin secondary-font() {
+  font-family: 'Arapey', serif;
+}

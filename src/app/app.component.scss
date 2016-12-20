@@ -1,0 +1,63 @@
+@import '../variables';
+@import '../mixins';
+
+// Todo: cuttoffs in variables
+
+.title {
+  h1 {
+    text-align: center;
+    font-size: 3.5em;
+    padding-bottom: 60px;
+    border-bottom: 2px solid $black;
+  }
+
+  .sub-text {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+.about {
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: auto;
+  width: 90%;
+  height: auto;
+  text-align: justify;
+
+  -webkit-columns: 450px;
+  -moz-columns: 450px;
+  columns: 450px;
+
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+
+  -webkit-column-rule: thin $gray solid;
+  -moz-column-rule: thin $gray solid;
+  column-rule: thin $gray solid;
+
+  p {
+    margin-top: 0;
+  }
+
+  b {
+    @include primary-font;
+  }
+
+  .header-text {
+    font-size: 24pt;
+  }
+
+  @media (max-width: 875px) {
+    -webkit-columns: 250px;
+    -moz-columns: 250px;
+    columns: 250px;
+  }
+}
+
+app-news-web {
+  height: 750px;
+  margin: 0 auto;
+  width: 90%;
+}

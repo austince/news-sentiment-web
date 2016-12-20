@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Arapey:400,400italic|Playfair+Display+SC:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="styles/index.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/timeline.css" type="text/css"/>
+    <link rel="stylesheet" href="bower_components/openSans/openSans.css"/>
+    <link rel="stylesheet" href="bower_components/nouislider/distribute/nouislider.min.css"/>
+
+    <script defer src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script defer src="bower_components/nouislider/distribute/nouislider.min.js"></script>
+    <script defer src="bower_components/d3/d3.min.js"></script>
+    <script defer src="bower_components/d3-queue/d3-queue.js"></script>
+    <script defer src="bower_components/colorbrewer/colorbrewer.js"></script>
+    <script src="bower_components/particles.js/particles.min.js"></script>
+
+    <script defer src="scripts/articles.js"></script>
+    <script defer src="scripts/timeline.js"></script>
+</head>
+<body>
+
+    <header id="title">
+        <h1 class="headerText">Sentiment</h1>
+    </header>
+
+
+    <section id="about">
+        <p class="subText">We pass a lot of news as people.</p>
+    </section>
+
+    <div id="chart"></div>
+
+    <div id="timeline"></div>
+
+    <section id="timelineExplainer" class="subText">
+        <p><b class="headerText">Negative</b> popular news is often seen
+            as the only news. Bad events are easily remembered, bad people are
+            more interesting, other's unhappiness helps us forget our own. These ideas are easy
+            to fall into but are they necessarily true? Are they reflected in our news?
+        </p>
+        <p>
+            This web attempts to show a portion of the news and how we have interacted with it. The size of each node is
+            determined by Facebook interactions up to the current date, while the color shows the sentiment of each article.
+            Those 'unhappy' and 'negative' articles appear stark red, while blue shows those with a 'positive' subject.
+            All politics aside.
+        </p>
+        <p>
+            The fundamentals of this visualization are present (and functioning!*). While this version pulls only from a
+            static segment of the dataset, the concept is much grander. The news always grows, as does how we view and interact with it.
+        </p>
+        <p>
+            In a later (potentially hypothetical) version, we will be able to dive deeper into interaction, exploring quantitative
+            changes not only in Facebook but in many of the other ways we share what we read on the internet. For now we
+            will just have to be content with the concept, and forgive the shortcomings of static data, a semi-skewed color
+            scale, and a few hidden numbers. But hey, let's not focus on the negative. The world is beautiful and so are you.
+        </p>
+    </section>
+
+    <footer id="credits">
+        <p><a href="views/timeweb-fullscreen.html">Psst .. <i>fullscreen</i> here! </a></p>
+        <p class="subText">Visualizing Society 2016 - Austin Cawley-Edwards - HST 325 Stevens Institute of Technology</p>
+    </footer>
+
+    <!--<script>
+        particlesJS("title", 'styles/particlesjs-config.json', function(x) {
+            console.log("Loaded particles: " + x);
+        });
+    </script>-->
+</body>
+</html>
